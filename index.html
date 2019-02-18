@@ -8,6 +8,7 @@
     <title>Save Later</title>
   </head>
   <body>
+    <div class="alert"></div>
     <form id="save-later-form">
       <h3>Simple Save Later Form</h3>
       <label for="full-name">Full Name</label>
@@ -19,7 +20,7 @@
       <label for="dob">Date Of Birth</label>
       <input type="date" name="dob" id="dob" />
       <label for="security">Security Question</label>
-      <select name="security" id="security">
+      <select name="security" id="security" tabindex="0">
         <option value="">Select a question</option>
         <option value="best-friend">What's your best friend's name?</option>
         <option value="pet">What's the name of your first pet?</option>
@@ -34,8 +35,8 @@
         placeholder="Describe yourself in 100 words"
       ></textarea>
 
-      <input type="button" id="submit" type="submit" value="SUBMIT" />
-      <input type="button" id="save" type="submit" value="SAVE" />
+      <button type="submit" id="submit">SUBMIT</button>
+      <button type="submit" id="save">SAVE</button>
     </form>
   </body>
   <script src="form.js"></script>
